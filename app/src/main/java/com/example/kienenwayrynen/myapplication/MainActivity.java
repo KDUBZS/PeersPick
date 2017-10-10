@@ -20,13 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        TextView username = (TextView) findViewById(R.id.username_string);
-        TextView pass = (TextView) findViewById(R.id.pass_string);
+        setContentView(R.layout.login);
 
-        username.setOnClickListener(this);
-        pass.setOnClickListener(this);
     }
 
     @Override
