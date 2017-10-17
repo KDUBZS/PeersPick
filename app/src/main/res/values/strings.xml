@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="username">USERNAME</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confPass">Confirm Password</string>
+    <string name="register">Submit Registration</string>
 </resources>
