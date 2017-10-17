@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/kienenwayrynen/.android/build-cache/f07c32a17dd56e0b05d74e55c269314a27ab5cec/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_8b53c8872e522aa482ac135189d51dae05718ceb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kienenwayrynen/.android/build-cache/574eb240a53fe2a3b2047c683541a9f66a267251/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_41d486250a464a881f71d3adae5bd51c805eb97e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="adc05415c5bbafa7f605003f057826d2c92ab30a">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7e4ce68b8ba3f091b54e541a920e32f02801087e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kienenwayrynen/.android/build-cache/753be97122bc2d7186792adbad654ca6c82504d6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e7e6c2a7bd3f142b738b731d26e7b22dd7e4cde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_81fa58219d9f1061c2a794ad5aa46331d35cc7be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kienenwayrynen/.android/build-cache/f07c32a17dd56e0b05d74e55c269314a27ab5cec/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8b53c8872e522aa482ac135189d51dae05718ceb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kienenwayrynen/.android/build-cache/574eb240a53fe2a3b2047c683541a9f66a267251/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41d486250a464a881f71d3adae5bd51c805eb97e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/kienenwayrynen/.android/build-cache/753be97122bc2d7186792adbad654ca6c82504d6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_7e7e6c2a7bd3f142b738b731d26e7b22dd7e4cde.jar" />
+    </item>
+
+</items>
