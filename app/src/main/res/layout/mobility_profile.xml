@@ -6,32 +6,52 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How many stairs?"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/number_stairs"
-            android:text="15"
-            android:textColor="@color/mainRed"/>
-
-
-    </LinearLayout>
-
-    <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="30"
-        android:progress="15"
-        android:id="@+id/stairs_seekbar"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="How many stairs?" />
+
+        <TextView
+            android:id="@+id/number_stairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/mainRed" />
+
+        <SeekBar
+            android:id="@+id/stairs_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="15" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="What is the maximum ramp length?" />
+
+        <TextView
+            android:id="@+id/ramp_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/mainRed" />
+
+        <SeekBar
+            android:id="@+id/ramp_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="15" />
+    </LinearLayout>
 
 </LinearLayout>
