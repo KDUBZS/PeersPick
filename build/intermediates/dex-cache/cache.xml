@@ -3,75 +3,183 @@
 
     <item
         is-multidex="false"
-        jar="/Users/kienenwayrynen/.android/build-cache/f07c32a17dd56e0b05d74e55c269314a27ab5cec/output/jars/classes.jar"
+        jar="/Users/stevencall/.android/build-cache/2da0e512886d03217723604c59d3738cdd35f5e9/output/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_8b53c8872e522aa482ac135189d51dae05718ceb.jar" />
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_8a35655d966da4cd288386621d3ed39bc229d5b7.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/kienenwayrynen/.android/build-cache/574eb240a53fe2a3b2047c683541a9f66a267251/output/jars/classes.jar"
+        jar="/Users/stevencall/.android/build-cache/cdb3e73678ed7680cc92d4afdb6905e8b713801e/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_98fb3bb1a7872cc3c210e5545252dcd41a2aa508.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/e27a2c30e326c3981302c202f9c0bc20d942c16d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_9dce12f08fe07d34426b6ea3ed4677205f4dc9bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/31b09a34fd2cbcf8aa6f6dd75dc8ed40db549f8d/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_41d486250a464a881f71d3adae5bd51c805eb97e.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="adc05415c5bbafa7f605003f057826d2c92ab30a">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7e4ce68b8ba3f091b54e541a920e32f02801087e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kienenwayrynen/.android/build-cache/753be97122bc2d7186792adbad654ca6c82504d6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e7e6c2a7bd3f142b738b731d26e7b22dd7e4cde/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_81fa58219d9f1061c2a794ad5aa46331d35cc7be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kienenwayrynen/.android/build-cache/f07c32a17dd56e0b05d74e55c269314a27ab5cec/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8b53c8872e522aa482ac135189d51dae05718ceb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/kienenwayrynen/.android/build-cache/574eb240a53fe2a3b2047c683541a9f66a267251/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41d486250a464a881f71d3adae5bd51c805eb97e/classes.dex" />
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_475687174370c0b36cb9b4140428344790dd600a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/kienenwayrynen/.android/build-cache/753be97122bc2d7186792adbad654ca6c82504d6/output/jars/classes.jar"
+        jar="/Users/stevencall/.android/build-cache/a5155c223d07878b7085c7e2858a130c8410a17a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_7249453e744e4c49342c355ca5784fb93b294d0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha7/constraint-layout-solver-1.0.0-alpha7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="439eeb5ffd54cbd18db0a6aea471e8356f19fc36">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-alpha7_4b4be9ee82c0e2726df7f252c8095a3a505c72a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/885d5d5c3b1632d4c8689dcbb5eee299fb56fc4e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="541a2ad68dc68aa49795821f8280b7624e6a0c9b">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_3274e704045d14ee4a322cb96a4f0c0de75ea466.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/aa181609ea5aa3a9759fad4dc13d57becfaf7f1a/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_7d02f20f958991f4acaf27824933291d13c7fa92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/eae0387a9c290798831b179f859717ecefb00703/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_199cacc2deba26da5fc95c31da756e2463af7324.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/58e200516562de034514ef0d6168414d297eec8f/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/Users/kienenwayrynen/AndroidStudioProjects/PeersPick/app/build/intermediates/pre-dexed/debug/classes_7e7e6c2a7bd3f142b738b731d26e7b22dd7e4cde.jar" />
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_8b35d63489ae5cd7b1bd920c71d93d4ac3fc3e66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/7823fc8829565edb5ff76add470411c14059161c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_6ad467438599e1f66740031a2b5f19a14439ea1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/7dba450b6a8e899b1725dd35f66044a34977bd3b/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_c320f712f8cb3dbacc644b537798efdd208222d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/626c6491dbaae9fb34c6459be7d9a6d1f13cce89/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_4edc973aa4ea6281b22b44d5751b5b45ff6522bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/7c26c9048e9654d235f5c7c2baa22dca380fa31a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_a8cc1efef86a7381e5b1c655c6a797b7d0ee4d08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/cdb3e73678ed7680cc92d4afdb6905e8b713801e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_dedce9ded982eeac67c3f7ae20548328a68bcbea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/aa181609ea5aa3a9759fad4dc13d57becfaf7f1a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_bbe3b07360d2897d229f4787addcc632c951f71e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/7dba450b6a8e899b1725dd35f66044a34977bd3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_c3d6a3364f4311ff821254f991fa20f7fb140723.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/2da0e512886d03217723604c59d3738cdd35f5e9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/classes_db62eb9f53797225c20357e4c2f1d91a81bf5123.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_469546e8a3022671bbff28b05958eb08d0997792.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/stevencall/.android/build-cache/7823fc8829565edb5ff76add470411c14059161c/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/stevencall/Desktop/cs420-capstone/PeersPick/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_65dd826f6e42cd94396cdd496aa866affe862f8f.jar" />
     </item>
 
 </items>
