@@ -27,7 +27,7 @@
                 android:layout_height="match_parent"
                 android:text="Account Registration"
                 android:textSize="25dp"
-                android:textColor="#ff0000"/>
+                android:textColor="@color/mainRed"/>
         </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -91,7 +91,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:text="@string/register"
-            android:textColor="#ff0000"/>
+            android:textColor="@color/mainRed"/>
 
     </LinearLayout>
 
