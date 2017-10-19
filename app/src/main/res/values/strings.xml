@@ -5,4 +5,5 @@
     <string name="password">Password</string>
     <string name="confPass">Confirm Password</string>
     <string name="register">Submit Registration</string>
+    <item name="button_login" type="id">button_login</item>
 </resources>
