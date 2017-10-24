@@ -71,39 +71,6 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/walk_length_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:text="@string/walk_distance_label" />
-
-
-        <TextView
-            android:id="@+id/walk_length"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/walk_length_label"
-            android:layout_toRightOf="@+id/walk_length_label"
-            android:text="15"
-            android:textColor="@color/mainRed" />
-
-        <SeekBar
-            android:id="@+id/walk_seekbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/walk_length_label"
-            android:max="100"
-            android:progress="15" />
-
-    </RelativeLayout>
-
     <CheckBox
         android:id="@+id/walk_uneven_surfaces_checkbox"
         android:layout_width="wrap_content"

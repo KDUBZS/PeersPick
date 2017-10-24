@@ -1,29 +1,25 @@
-package com.example.kienenwayrynen.myapplication;
+package com.example.kienenwayrynen.myapplication.fragments;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-/**
- * Created by stevencall on 10/19/17.
- */
+import com.example.kienenwayrynen.myapplication.R;
 
-public class DisabilityProfile extends AppCompatActivity {
+public class MobilityOptions extends Fragment {
 
-    TextView numStairs;
-
+    private TextView numStairs;
+    @Nullable
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.mobility_profile);
-        SeekBar stairBar = (SeekBar) findViewById(R.id.stairs_seekbar);
-        numStairs = (TextView) findViewById(R.id.number_stairs);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.mobility_profile, null, false);
+        SeekBar stairBar = (SeekBar) view.findViewById(R.id.stairs_seekbar);
+        numStairs = (TextView) view.findViewById(R.id.number_stairs);
         stairBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -40,5 +36,6 @@ public class DisabilityProfile extends AppCompatActivity {
 
             }
         });
+        return view;
     }
 }
