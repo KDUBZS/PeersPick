@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/stairs_label"
-            android:max="30"
+            android:max="80"
             android:progress="15" />
 
     </RelativeLayout>
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ramp_length_label"
-            android:max="30"
+            android:max="100"
             android:progress="15" />
 
     </RelativeLayout>
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/walk_length_label"
-            android:max="30"
+            android:max="100"
             android:progress="15" />
 
     </RelativeLayout>
@@ -120,8 +120,4 @@
         android:onClick="onCheckboxClicked"
         android:text="@string/own_disability_placard" />
     />
-</LinearLayout><!--
-able to walk on uneven surfaces (or not)
-able to walk no more than 50 feet, 100 feet, ¼ mile, etc.
-own an ADA Parking Placard (so they can know where theses spots are located on campus)
--->
+</LinearLayout>
