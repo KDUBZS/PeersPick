@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:id="@+id/button_login"
-        android:text="Login" />
+        android:text="@string/login_button_label" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Register"
+        android:text="@string/register_button_label"
 
         android:id="@+id/register_button"
         />

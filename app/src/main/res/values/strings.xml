@@ -5,5 +5,7 @@
     <string name="password">Password</string>
     <string name="confPass">Confirm Password</string>
     <string name="register">Submit Registration</string>
-    <item name="button_login" type="id">button_login</item>
+    <string name="login_button_label">Login</string>
+    <string name="register_button_label">Register</string>
+    <string name="can_you_walk_on_uneven_surfaces">Can you walk on uneven surfaces?</string>
 </resources>

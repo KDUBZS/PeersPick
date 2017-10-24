@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="16dp">
+
 
         <TextView
+            android:id="@+id/stairs_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -21,6 +23,8 @@
             android:id="@+id/number_stairs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/stairs_label"
+            android:layout_toRightOf="@+id/stairs_label"
             android:text="15"
             android:textColor="@color/mainRed" />
 
@@ -28,30 +32,58 @@
             android:id="@+id/stairs_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/stairs_label"
             android:max="30"
             android:progress="15" />
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/ramp_length_label"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:text="What is the maximum ramp length?" />
+
 
         <TextView
             android:id="@+id/ramp_length"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="15"
-            android:textColor="@color/mainRed" />
+            android:textColor="@color/mainRed"
+            android:layout_toEndOf="@+id/ramp_length_label"
+            android:layout_toRightOf="@+id/ramp_length_label"/>
 
         <SeekBar
             android:id="@+id/ramp_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="30"
-            android:progress="15" />
-    </LinearLayout>
+            android:progress="15"
+            android:layout_below="@+id/ramp_length_label"/>
 
-</LinearLayout>
+    </RelativeLayout>
+
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/can_you_walk_on_uneven_surfaces"
+    android:id="@+id/walk_uneven_surfaces_checkbox"
+    android:onClick="onCheckboxClicked"/>
+
+
+    />
+
+
+</LinearLayout><!--
+able to walk on uneven surfaces (or not)
+able to walk no more than 50 feet, 100 feet, ¼ mile, etc.
+own an ADA Parking Placard (so they can know where theses spots are located on campus)
+-->
