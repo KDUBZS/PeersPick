@@ -1,4 +1,4 @@
-package com.example.kienenwayrynen.myapplication;
+package com.example.kienenwayrynen.myapplication.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
@@ -8,11 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-/**
- * Created by kienenwayrynen on 10/5/17.
- */
+import com.example.kienenwayrynen.myapplication.R;
 
-public class RegistrationScreen extends AppCompatActivity {
+
+public class Registration extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,7 @@ public class RegistrationScreen extends AppCompatActivity {
                 if(password.getText().toString().equals(confirmPassword.getText().toString())){
                     Log.d("click","blahloggedin");
                 }else{
-                    Toast.makeText(RegistrationScreen.this, "passwords do not match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Registration.this, "passwords do not match", Toast.LENGTH_LONG).show();
                 }
 
             }
