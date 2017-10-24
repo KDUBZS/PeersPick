@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="How many stairs?" />
+            android:text="@string/number_stairs" />
 
         <TextView
             android:id="@+id/number_stairs"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="What is the maximum ramp length?" />
+            android:text="@string/ramp_length_text" />
 
 
         <TextView
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="What is the maximum distance you can walk?" />
+            android:text="@string/walk_distance_label" />
 
 
         <TextView
@@ -111,7 +111,6 @@
         android:layoutDirection="rtl"
         android:onClick="onCheckboxClicked"
         android:text="@string/can_you_walk_on_uneven_surfaces" />
-    />
 
     <CheckBox
         android:id="@+id/own_ada_placard_checkbox"
@@ -121,8 +120,6 @@
         android:onClick="onCheckboxClicked"
         android:text="@string/own_disability_placard" />
     />
-
-
 </LinearLayout><!--
 able to walk on uneven surfaces (or not)
 able to walk no more than 50 feet, 100 feet, ¼ mile, etc.
