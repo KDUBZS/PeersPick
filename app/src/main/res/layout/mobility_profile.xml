@@ -75,8 +75,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/can_you_walk_on_uneven_surfaces"
-    android:id="@+id/walk_uneven_surfaces_checkbox"
-    android:onClick="onCheckboxClicked"/>
+    android:id="@+id/walk_uneven_surfaces_checkbox" />
 
 
     />
