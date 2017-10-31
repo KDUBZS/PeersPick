@@ -1,6 +1,6 @@
 # Build application files
-/build
-/app/build
+build
+
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -8,13 +8,11 @@ local.properties
 # Gradle generated files
 .gradle/
 
-
-
 # Signing files
 .signing/
 
 # User-specific configurations
-.idea/
+.idea
 *.iml
 
 # OS-specific files
