@@ -26,6 +26,9 @@
         <activity
             android:name=".activities.DisabilityProfile"
             android:label="@string/disability_profile" />
+        <activity
+            android:name=".activities.RouteFinder"
+            android:label="@string/route_finder" />
     </application>
 
 </manifest>

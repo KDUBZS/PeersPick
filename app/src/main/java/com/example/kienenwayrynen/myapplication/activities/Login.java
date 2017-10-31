@@ -19,8 +19,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         Button registerButton = (Button) findViewById(R.id.register_button);
         registerButton.setOnClickListener(this);
 
-        Button loginBUtton = (Button) findViewById(R.id.button_login);
-        loginBUtton.setOnClickListener(this);
+        Button loginButton = (Button) findViewById(R.id.button_login);
+        loginButton.setOnClickListener(this);
     }
 
     @Override

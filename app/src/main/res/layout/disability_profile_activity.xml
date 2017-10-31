@@ -6,15 +6,22 @@
     android:orientation="vertical">
 
     <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FFFF"
         android:elevation="8dp"
-        android:background="#FFFFFF"
-        app:tabMode="scrollable"
-        android:id="@+id/tabs" />
+        app:tabMode="scrollable" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:id="@+id/temp_button"/>
 </LinearLayout>
