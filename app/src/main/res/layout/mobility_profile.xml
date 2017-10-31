@@ -16,7 +16,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:text="@string/number_stairs" />
 
         <TextView
@@ -24,8 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/stairs_label"
-            android:layout_toRightOf="@+id/stairs_label"
-            android:text="15"
+            android:text="@string/number_stairs_number"
             android:textColor="@color/mainRed" />
 
         <SeekBar
@@ -48,7 +46,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:text="@string/ramp_length_text" />
 
 
@@ -57,9 +54,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/ramp_length_label"
-            android:layout_toRightOf="@+id/ramp_length_label"
-            android:text="15"
+            android:text="@string/ramp_length_number"
             android:textColor="@color/mainRed" />
+        <!--android:layout_toRightOf="@+id/ramp_length_label"-->
 
         <SeekBar
             android:id="@+id/ramp_seekbar"
@@ -76,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="onCheckboxClicked"
+        android:onClick="walk_uneven_onCheckboxClicked"
         android:text="@string/can_you_walk_on_uneven_surfaces" />
 
     <CheckBox
@@ -84,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="onCheckboxClicked"
+        android:onClick="own_placard_onCheckboxClicked"
         android:text="@string/own_disability_placard" />
-    />
+
 </LinearLayout>

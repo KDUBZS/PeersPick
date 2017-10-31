@@ -8,10 +8,11 @@
     <string name="login_button_label">Login</string>
     <string name="register_button_label">Register</string>
     <string name="can_you_walk_on_uneven_surfaces">Can you walk on uneven surfaces?</string>
-
     <string name="own_disability_placard">Do you own a disability placard?</string>
     <string name="number_stairs">How many stairs can you climb?</string>
     <string name="walk_distance_label">What is the maximum distance you can walk?</string>
     <string name="ramp_length_text">What is the maximum ramp length you can travel?</string>
     <string name="disability_profile">Disability Profile</string>
+    <string name="ramp_length_number">15</string>
+    <string name="number_stairs_number">15</string>
 </resources>

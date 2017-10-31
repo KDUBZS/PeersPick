@@ -29,4 +29,11 @@ public class DisabilityProfile extends AppCompatActivity {
         viewpager.setAdapter(adapter);
         tabs.setupWithViewPager(viewpager);
     }
+
+
+    public void walk_uneven_onCheckboxClicked(View view) {
+    }
+
+    public void own_placard_onCheckboxClicked(View view) {
+    }
 }
