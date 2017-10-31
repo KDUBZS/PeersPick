@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="How many stairs?" />
+            android:text="@string/number_stairs" />
 
         <TextView
             android:id="@+id/number_stairs"
@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/stairs_label"
-            android:max="30"
+            android:max="80"
             android:progress="15" />
 
     </RelativeLayout>
@@ -49,40 +49,42 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="What is the maximum ramp length?" />
+            android:text="@string/ramp_length_text" />
 
 
         <TextView
             android:id="@+id/ramp_length"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15"
-            android:textColor="@color/mainRed"
             android:layout_toEndOf="@+id/ramp_length_label"
-            android:layout_toRightOf="@+id/ramp_length_label"/>
+            android:layout_toRightOf="@+id/ramp_length_label"
+            android:text="15"
+            android:textColor="@color/mainRed" />
 
         <SeekBar
             android:id="@+id/ramp_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="30"
-            android:progress="15"
-            android:layout_below="@+id/ramp_length_label"/>
+            android:layout_below="@+id/ramp_length_label"
+            android:max="100"
+            android:progress="15" />
 
     </RelativeLayout>
 
-<CheckBox
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/can_you_walk_on_uneven_surfaces"
-    android:id="@+id/walk_uneven_surfaces_checkbox" />
+    <CheckBox
+        android:id="@+id/walk_uneven_surfaces_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/can_you_walk_on_uneven_surfaces" />
 
-
+    <CheckBox
+        android:id="@+id/own_ada_placard_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/own_disability_placard" />
     />
-
-
-</LinearLayout><!--
-able to walk on uneven surfaces (or not)
-able to walk no more than 50 feet, 100 feet, ¼ mile, etc.
-own an ADA Parking Placard (so they can know where theses spots are located on campus)
--->
+</LinearLayout>
