@@ -39,4 +39,11 @@ public class DisabilityProfile extends AppCompatActivity {
             }
         });
     }
+
+
+    public void walk_uneven_onCheckboxClicked(View view) {
+    }
+
+    public void own_placard_onCheckboxClicked(View view) {
+    }
 }

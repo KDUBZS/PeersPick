@@ -18,7 +18,8 @@ public class MobilityOptions extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.mobility_profile, null, false);
-        SeekBar stairBar = (SeekBar) view.findViewById(R.id.stairs_seekbar);
+
+        /*SeekBar stairBar = (SeekBar) view.findViewById(R.id.stairs_seekbar);
         numStairs = (TextView) view.findViewById(R.id.number_stairs);
         stairBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -35,7 +36,7 @@ public class MobilityOptions extends Fragment {
             public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
-        });
+        });*/
         return view;
     }
 }

@@ -16,25 +16,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:text="@string/number_stairs" />
 
-        <TextView
+        <EditText
             android:id="@+id/number_stairs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/stairs_label"
-            android:layout_toRightOf="@+id/stairs_label"
-            android:text="15"
+            android:text="@string/number_stairs_number"
             android:textColor="@color/mainRed" />
 
-        <SeekBar
+<!--        <SeekBar
             android:id="@+id/stairs_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/stairs_label"
             android:max="80"
-            android:progress="15" />
+            android:progress="15" />-->
 
     </RelativeLayout>
 
@@ -48,26 +46,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
             android:text="@string/ramp_length_text" />
 
 
-        <TextView
+        <EditText
             android:id="@+id/ramp_length"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/ramp_length_label"
-            android:layout_toRightOf="@+id/ramp_length_label"
-            android:text="15"
+            android:text="@string/ramp_length_number"
             android:textColor="@color/mainRed" />
 
-        <SeekBar
+<!--        <SeekBar
             android:id="@+id/ramp_seekbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ramp_length_label"
             android:max="100"
-            android:progress="15" />
+            android:progress="15" />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/walk_distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/walk_distance_label_text" />
+
+
+        <EditText
+            android:id="@+id/walk_distance_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/walk_distance_label"
+            android:text="@string/walk_distance_number_value"
+            android:textColor="@color/mainRed" />
+
+<!--        <SeekBar
+            android:id="@+id/walk_distance_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walk_distance_label"
+            android:max="100"
+            android:progress="15" />-->
 
     </RelativeLayout>
 
@@ -76,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="onCheckboxClicked"
+        android:onClick="walk_uneven_onCheckboxClicked"
         android:text="@string/can_you_walk_on_uneven_surfaces" />
 
     <CheckBox
@@ -84,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="onCheckboxClicked"
+        android:onClick="own_placard_onCheckboxClicked"
         android:text="@string/own_disability_placard" />
-    />
+
 </LinearLayout>
