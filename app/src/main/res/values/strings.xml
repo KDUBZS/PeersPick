@@ -14,4 +14,5 @@
     <string name="walk_distance_label">What is the maximum distance you can walk?</string>
     <string name="ramp_length_text">What is the maximum ramp length you can travel?</string>
     <string name="disability_profile">Disability Profile</string>
+    <string name="route_finder">Route Finder</string>
 </resources>

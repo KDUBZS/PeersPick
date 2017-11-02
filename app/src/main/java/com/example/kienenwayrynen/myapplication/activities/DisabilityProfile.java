@@ -1,6 +1,7 @@
 package com.example.kienenwayrynen.myapplication.activities;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -28,5 +30,13 @@ public class DisabilityProfile extends AppCompatActivity {
         DisabilityProfileViewPagerAdapter adapter = new DisabilityProfileViewPagerAdapter(getSupportFragmentManager());
         viewpager.setAdapter(adapter);
         tabs.setupWithViewPager(viewpager);
+        Button tempButton = (Button) findViewById(R.id.temp_button);
+        tempButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent next = new Intent(DisabilityProfile.this, RouteFinder.class);
+                startActivity(next);
+            }
+        });
     }
 }
