@@ -2,101 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:padding="16dp">
 
-    <RelativeLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
+        android:layout_gravity="center_horizontal">
 
-
-        <TextView
-            android:id="@+id/stairs_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/number_stairs" />
-
-        <EditText
-            android:id="@+id/number_stairs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/stairs_label"
-            android:text="@string/number_stairs_number"
-            android:textColor="@color/mainRed" />
-
-<!--        <SeekBar
-            android:id="@+id/stairs_seekbar"
+        <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/stairs_label"
-            android:max="80"
-            android:progress="15" />-->
+            android:hint="@string/walk_distance_label_text" />
 
-    </RelativeLayout>
+    </android.support.design.widget.TextInputLayout>
 
-    <RelativeLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
+        android:layout_gravity="center_horizontal">
 
-        <TextView
-            android:id="@+id/ramp_length_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/ramp_length_text" />
-
-
-        <EditText
-            android:id="@+id/ramp_length"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/ramp_length_label"
-            android:text="@string/ramp_length_number"
-            android:textColor="@color/mainRed" />
-
-<!--        <SeekBar
-            android:id="@+id/ramp_seekbar"
+        <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ramp_length_label"
-            android:max="100"
-            android:progress="15" />-->
+            android:hint="@string/number_stairs" />
 
-    </RelativeLayout>
+    </android.support.design.widget.TextInputLayout>
 
-    <RelativeLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
+        android:layout_gravity="center_horizontal">
 
-        <TextView
-            android:id="@+id/walk_distance_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/walk_distance_label_text" />
-
-
-        <EditText
-            android:id="@+id/walk_distance_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/walk_distance_label"
-            android:text="@string/walk_distance_number_value"
-            android:textColor="@color/mainRed" />
-
-<!--        <SeekBar
-            android:id="@+id/walk_distance_seekbar"
+        <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/walk_distance_label"
-            android:max="100"
-            android:progress="15" />-->
+            android:hint="@string/ramp_length_text" />
 
-    </RelativeLayout>
+    </android.support.design.widget.TextInputLayout>
+
 
     <CheckBox
         android:id="@+id/walk_uneven_surfaces_checkbox"

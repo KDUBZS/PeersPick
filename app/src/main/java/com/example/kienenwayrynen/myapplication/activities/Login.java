@@ -21,6 +21,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         Button loginButton = (Button) findViewById(R.id.button_login);
         loginButton.setOnClickListener(this);
+        setTitle("Login");
     }
 
     @Override
