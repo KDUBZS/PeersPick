@@ -7,6 +7,8 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewTreeObserver;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -54,14 +56,27 @@ public class RouteFinder extends AppCompatActivity{
                         "raw", getPackageName()));
 
         final Graph sampleGraph = new Graph(ins);
-        final PathImageView img = (PathImageView) findViewById(R.id.path_img);
+        /*final PathImageView img = (PathImageView) findViewById(R.id.path_img);
         img.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
                 List<Point> path = sampleGraph.findPath(12, 22, 0,0, img.getScaleX(), img.getScaleY());
                 img.setPath(path);
             }
-        });
+        });*/
+        WebView webView = (WebView)findViewById(R.id.webview);
+        webView.setWebViewClient(new Callback());
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("http://ec2-54-148-84-77.us-west-2.compute.amazonaws.com/peerspick/map");
+
+    }
+
+    private class Callback extends WebViewClient{  //HERE IS THE MAIN CHANGE.
+
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            return (false);
+        }
 
     }
 

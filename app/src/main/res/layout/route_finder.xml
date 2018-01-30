@@ -16,11 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <com.example.kienenwayrynen.myapplication.view.PathImageView
-        android:id="@+id/path_img"
-        android:background="@color/black"
-        android:layout_width="match_parent"
+    <WebView
+        android:id="@+id/webview"
         android:layout_height="match_parent"
-        android:src="@drawable/map"/>
+        android:layout_width="match_parent"/>
 
 </LinearLayout>

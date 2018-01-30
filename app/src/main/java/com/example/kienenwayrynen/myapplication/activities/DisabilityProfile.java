@@ -34,6 +34,9 @@ public class DisabilityProfile extends AppCompatActivity {
         tempButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+
                 Intent next = new Intent(DisabilityProfile.this, RouteFinder.class);
                 startActivity(next);
             }
