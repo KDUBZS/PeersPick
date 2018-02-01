@@ -26,6 +26,7 @@
         android:layout_gravity="center_horizontal">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/stairs_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/number_stairs" />
@@ -38,6 +39,7 @@
         android:layout_gravity="center_horizontal">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/ramp_length_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/ramp_length_text" />
