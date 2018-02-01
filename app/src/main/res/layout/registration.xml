@@ -36,6 +36,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username"
@@ -49,6 +50,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -62,7 +64,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -76,7 +78,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/confirm_password"
+                android:id="@+id/confPass_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/confPass"

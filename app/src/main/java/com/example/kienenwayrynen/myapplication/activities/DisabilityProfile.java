@@ -57,7 +57,6 @@ public class DisabilityProfile extends AppCompatActivity {
         JSONObject postData = new JSONObject();
         EditText stairs = (EditText) findViewById(R.id.stairs_edit_text);
         EditText ramp_length = (EditText) findViewById(R.id.ramp_length_edit_text);
-        EditText ramp = (EditText) findViewById(R.id.ramp_length_edit_text);
         CheckBox walk_uneven = (CheckBox) findViewById(R.id.walk_uneven_surfaces_checkbox);
         CheckBox own_placard = (CheckBox) findViewById(R.id.own_ada_placard_checkbox);
 
