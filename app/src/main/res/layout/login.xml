@@ -24,6 +24,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
@@ -37,6 +38,7 @@
             android:layout_gravity="center_horizontal">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -49,7 +51,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="LoginA" />
+        android:id="@+id/button_login"
+        android:text="@string/login_button_label" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -81,6 +84,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Register" />
+        android:text="@string/register_button_label"
+
+        android:id="@+id/register_button"
+        />
 
 </LinearLayout>
