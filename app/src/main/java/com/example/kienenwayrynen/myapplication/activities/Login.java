@@ -1,6 +1,10 @@
 package com.example.kienenwayrynen.myapplication.activities;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +29,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        1);
+        }
+
         Button registerButton = (Button) findViewById(R.id.register_button);
         registerButton.setOnClickListener(this);
 
@@ -40,6 +52,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setTitle("Login");
     }
 
+
     private String profileAsJson() {
         JSONObject postData = new JSONObject();
         TextInputEditText username = (TextInputEditText) findViewById(R.id.username_edit_text);
@@ -53,6 +66,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         }
         return postData.toString();
     }
+
 
     @Override
     public void onClick(View view) {
