@@ -14,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -43,15 +45,31 @@ public class DisabilityProfile extends NavigableActivity {
                 editor.putInt("stairs", option.getStairs());
                 editor.commit();
                 startActivity(next);
+                System.out.println(profileAsJson());
             }
+
         });
         setTitle("Disability Profile");
     }
 
+    private String profileAsJson() {
+        JSONObject postData = new JSONObject();
+        EditText stairs = (EditText) findViewById(R.id.stairs_edit_text);
+        EditText ramp_length = (EditText) findViewById(R.id.ramp_length_edit_text);
+        CheckBox walk_uneven = (CheckBox) findViewById(R.id.walk_uneven_surfaces_checkbox);
+        CheckBox own_placard = (CheckBox) findViewById(R.id.own_ada_placard_checkbox);
 
-    public void walk_uneven_onCheckboxClicked(View view) {
-    }
 
-    public void own_placard_onCheckboxClicked(View view) {
+        try {
+            postData.put(USERNAME_KEY, "test");
+            postData.put(EMAILADDRESS_KEY, "test@test.com");
+            postData.put(STAIRLIMIT_KEY, stairs.getText().toString());
+            postData.put(RAMPLENGTH_KEY, ramp_length.getText().toString());
+            postData.put(WALKUNEVEN_KEY, String.valueOf(walk_uneven.isChecked()));
+            postData.put(OWNPLACARD_KEY, String.valueOf(own_placard.isChecked()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return postData.toString();
     }
 }

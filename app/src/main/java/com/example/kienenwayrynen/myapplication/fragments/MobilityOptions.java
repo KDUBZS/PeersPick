@@ -29,24 +29,7 @@ public class MobilityOptions extends Fragment {
         View view = inflater.inflate(R.layout.mobility_profile, null, false);
 
         stairs = (TextInputEditText) view.findViewById(R.id.stairs);
-        /*SeekBar stairBar = (SeekBar) view.findViewById(R.id.stairs_seekbar);
-        numStairs = (TextView) view.findViewById(R.id.number_stairs);
-        stairBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                numStairs.setText(String.valueOf(i));
-            }
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });*/
         return view;
     }
 }

@@ -26,6 +26,7 @@
         android:layout_gravity="center_horizontal">
 
         <android.support.design.widget.TextInputEditText
+
             android:id="@+id/stairs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,6 +40,7 @@
         android:layout_gravity="center_horizontal">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/ramp_length_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/ramp_length_text" />
@@ -51,7 +53,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="walk_uneven_onCheckboxClicked"
         android:text="@string/can_you_walk_on_uneven_surfaces" />
 
     <CheckBox
@@ -59,7 +60,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layoutDirection="rtl"
-        android:onClick="own_placard_onCheckboxClicked"
         android:text="@string/own_disability_placard" />
 
 </LinearLayout>

@@ -1,8 +1,13 @@
 package com.example.kienenwayrynen.myapplication.activities;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Path;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
@@ -19,8 +24,12 @@ import com.example.kienenwayrynen.myapplication.view.PathImageView;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.RandomAccessFile;
 import java.lang.reflect.Array;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.List;
 
 public class RouteFinder extends NavigableActivity {
@@ -59,8 +68,5 @@ public class RouteFinder extends NavigableActivity {
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             return (false);
         }
-
     }
-
-
 }

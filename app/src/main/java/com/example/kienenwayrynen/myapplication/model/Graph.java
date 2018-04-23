@@ -107,8 +107,11 @@ public class Graph {
         List<Point> path = new ArrayList<>();
         Node parent = node;
         while (parent != null) {
-            System.out.println("adding to path:" + parent.x * scaleX + "  " + parent.y * scaleY);
-            path.add(new Point(xInset + ((int)(parent.x * scaleX)),  yInset+ ((int)(parent.y * scaleY))));
+            int x = xInset + ((int)(parent.x * scaleX));
+            int y = yInset+ ((int)(parent.y * scaleY));
+            System.out.println("adding to path:" +x  +"  " + y );
+            path.add(new Point(x, y));
+            //path.add(new Point(parent.x, parent.y));
             parent = parent.predecessor;
         }
         return path;
