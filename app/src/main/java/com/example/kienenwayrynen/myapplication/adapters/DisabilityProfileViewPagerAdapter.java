@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.kienenwayrynen.myapplication.fragments.MobilityOptions;
 import com.example.kienenwayrynen.myapplication.fragments.PagerFragment;
+import com.example.kienenwayrynen.myapplication.fragments.VisionOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,7 @@ public class DisabilityProfileViewPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         fragments = new ArrayList<>();
         fragments.add(new PagerFragment(frag, "Mobility"));
-        fragments.add(new PagerFragment(new MobilityOptions(), "Vision"));
+        fragments.add(new PagerFragment(new VisionOptions(), "Vision"));
         fragments.add(new PagerFragment(new MobilityOptions(), "Hearing"));
     }
 
