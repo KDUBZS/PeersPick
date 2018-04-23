@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/Pathfinder"
+            android:icon="@drawable/ic_games_white_24dp"
+            android:title="Pathfinder"/>
+        <item android:id="@+id/play"
+            android:icon="@drawable/ic_account_circle_white_24dp"
+            android:title="Disability Profile"/>
+        <item android:id="@+id/performance"
+            android:icon="@drawable/ic_grade_white_24dp"
+            android:title="Settings"/>
+    </group>
+</menu>

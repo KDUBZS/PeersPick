@@ -4,22 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Spinner
-        android:id="@+id/route_start_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </Spinner>
-
-    <Spinner
-        android:id="@+id/route_end_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <com.example.kienenwayrynen.myapplication.view.PathImageView
-        android:id="@+id/path_img"
-        android:layout_width="match_parent"
+    <WebView
+        android:id="@+id/webview"
         android:layout_height="match_parent"
-        android:src="@drawable/map"/>
+        android:layout_width="match_parent"/>
 
 </LinearLayout>

@@ -9,9 +9,12 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.PersistableBundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewTreeObserver;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -29,13 +32,11 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.List;
 
-public class RouteFinder extends AppCompatActivity{
+public class RouteFinder extends NavigableActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.route_finder);
-        Spinner routeStartSpinner = (Spinner) findViewById(R.id.route_start_spinner);
-        Spinner routeEndSpinner = (Spinner) findViewById(R.id.route_end_spinner);
+        addContent(R.layout.route_finder);
         String[] testArray = {"Annex",
                 "Clark College Building (VCCW)",
                 "Classroom Building (VCLS)",
@@ -51,66 +52,21 @@ public class RouteFinder extends AppCompatActivity{
                 "Student Services Center (VSSC)\n" + "Admissions, Bookstore,\n" +
                 "Financial Aid, Visitor’s Center",
                 "Undergraduate Building (VUB)"};
-        ArrayAdapter<CharSequence> routeStartAdapter =
-                new ArrayAdapter<CharSequence>(this,android.R.layout.simple_list_item_1, testArray);
-        ArrayAdapter<CharSequence> routeEndAdapter =
-                new ArrayAdapter<CharSequence>(this,android.R.layout.simple_list_item_1, testArray);
-        routeStartSpinner.setAdapter(routeStartAdapter);
-        routeEndSpinner.setAdapter(routeEndAdapter);
 
-        InputStream ins = getResources().openRawResource(
-                getResources().getIdentifier("sample_graph",
-                        "raw", getPackageName()));
-
-        final Graph sampleGraph = new Graph(ins);
-        final PathImageView img = (PathImageView) findViewById(R.id.path_img);
-
-
-
-        img.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                Bitmap topresent = convertToMutable(BitmapFactory.decodeResource(getResources(), R.drawable.map));
-                float scalex = topresent.getWidth()/(float)600 ;
-                float scaleY = topresent.getHeight()/(float)364;
-                System.out.println("scalex:" + scalex + " scaley:" + scaleY + " bitw:" + topresent.getWidth() + " bith:" + topresent.getHeight());
-                List<Point> path = sampleGraph.findPath(12, 22, 0,0, scalex, scaleY);
-                img.setMap(topresent, path);
-            }
-        });
+        WebView webView = (WebView)findViewById(R.id.webview);
+        webView.setWebViewClient(new Callback());
+        webView.getSettings().setJavaScriptEnabled(true);
+        setTitle("Path Finder");
+        int stairs = PreferenceManager.getDefaultSharedPreferences(this).getInt("stairs", 999);
+        webView.loadUrl("http://ec2-54-148-84-77.us-west-2.compute.amazonaws.com/peerspick/view_path?stairs=" + stairs);
 
     }
 
-    private static Bitmap convertToMutable(Bitmap imgIn) {
-        try {
-            File file = new File(Environment.getExternalStorageDirectory() + File.separator + "temp.tmp");
+    private class Callback extends WebViewClient{  //HERE IS THE MAIN CHANGE.
 
-            RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
-
-            int width = imgIn.getWidth();
-            int height = imgIn.getHeight();
-            Bitmap.Config type = imgIn.getConfig();
-
-            FileChannel channel = randomAccessFile.getChannel();
-            MappedByteBuffer map = channel.map(FileChannel.MapMode.READ_WRITE, 0, imgIn.getRowBytes() * height);
-            imgIn.copyPixelsToBuffer(map);
-            imgIn.recycle();
-            System.gc();
-
-            imgIn = Bitmap.createBitmap(width, height, type);
-            map.position(0);
-            imgIn.copyPixelsFromBuffer(map);
-            channel.close();
-            randomAccessFile.close();
-
-            file.delete();
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            return (false);
         }
-
-        return imgIn;
     }
-
-
 }
