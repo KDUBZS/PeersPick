@@ -20,10 +20,10 @@ public class DisabilityProfileViewPagerAdapter extends FragmentPagerAdapter {
         return fragments.get(position).getTitle();
     }
 
-    public DisabilityProfileViewPagerAdapter(FragmentManager fm) {
+    public DisabilityProfileViewPagerAdapter(FragmentManager fm, Fragment frag) {
         super(fm);
         fragments = new ArrayList<>();
-        fragments.add(new PagerFragment(new MobilityOptions(), "Mobility"));
+        fragments.add(new PagerFragment(frag, "Mobility"));
         fragments.add(new PagerFragment(new MobilityOptions(), "Vision"));
         fragments.add(new PagerFragment(new MobilityOptions(), "Hearing"));
     }

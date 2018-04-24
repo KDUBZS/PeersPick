@@ -4,6 +4,7 @@ import android.graphics.Path;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewTreeObserver;
@@ -22,13 +23,11 @@ import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.util.List;
 
-public class RouteFinder extends AppCompatActivity{
+public class RouteFinder extends NavigableActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.route_finder);
-        Spinner routeStartSpinner = (Spinner) findViewById(R.id.route_start_spinner);
-        Spinner routeEndSpinner = (Spinner) findViewById(R.id.route_end_spinner);
+        addContent(R.layout.route_finder);
         String[] testArray = {"Annex",
                 "Clark College Building (VCCW)",
                 "Classroom Building (VCLS)",
@@ -44,30 +43,13 @@ public class RouteFinder extends AppCompatActivity{
                 "Student Services Center (VSSC)\n" + "Admissions, Bookstore,\n" +
                 "Financial Aid, Visitor’s Center",
                 "Undergraduate Building (VUB)"};
-        ArrayAdapter<CharSequence> routeStartAdapter =
-                new ArrayAdapter<CharSequence>(this,android.R.layout.simple_list_item_1, testArray);
-        ArrayAdapter<CharSequence> routeEndAdapter =
-                new ArrayAdapter<CharSequence>(this,android.R.layout.simple_list_item_1, testArray);
-        routeStartSpinner.setAdapter(routeStartAdapter);
-        routeEndSpinner.setAdapter(routeEndAdapter);
 
-        InputStream ins = getResources().openRawResource(
-                getResources().getIdentifier("sample_graph",
-                        "raw", getPackageName()));
-
-        final Graph sampleGraph = new Graph(ins);
-        /*final PathImageView img = (PathImageView) findViewById(R.id.path_img);
-        img.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                List<Point> path = sampleGraph.findPath(12, 22, 0,0, img.getScaleX(), img.getScaleY());
-                img.setPath(path);
-            }
-        });*/
         WebView webView = (WebView)findViewById(R.id.webview);
         webView.setWebViewClient(new Callback());
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://ec2-54-148-84-77.us-west-2.compute.amazonaws.com/peerspick/map");
+        setTitle("Path Finder");
+        int stairs = PreferenceManager.getDefaultSharedPreferences(this).getInt("stairs", 999);
+        webView.loadUrl("http://ec2-54-148-84-77.us-west-2.compute.amazonaws.com/peerspick/view_path?stairs=" + stairs);
 
     }
 
